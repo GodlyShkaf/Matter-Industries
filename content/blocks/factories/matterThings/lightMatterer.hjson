@@ -1,0 +1,109 @@
+name: Light matter absorber
+description: Turns basic resources into light matter
+type: multicraft.MultiCrafter
+menu: transform
+recipes: [
+{
+input: {
+items: [
+copper/1
+]
+power: 6
+}
+output: {
+fluids: [matind-lightMatter/0.1]
+}
+craftTime: 60
+}
+{
+input: {
+items: [
+lead/1
+]
+power: 5.5
+}
+output: {
+fluids: [matind-lightMatter/0.1]
+}
+craftTime: 50
+}
+{
+input: {
+items: [
+titanium/1
+]
+power: 4.5
+}
+output: {
+fluids: [matind-lightMatter/0.3]
+}
+craftTime: 70
+}
+{
+input: {
+items: [
+sand/2
+]
+power: 5.5
+}
+output: {
+fluids: [matind-lightMatter/0.1]
+}
+craftTime: 50
+}
+{
+input: {
+fluids: [water/1.2]
+power: 2
+}
+output: {
+fluids: [matind-lightMatter/0.1]
+}
+craftTime: 45
+}
+{
+input: {
+items: [
+coal/1
+]
+power: 4.5
+}
+output: {
+fluids: [matind-lightMatter/0.23]
+}
+craftTime: 55
+}
+]
+category: crafting
+updateEffect: pulverize
+ambientSound: hum
+ambientSoundVolume: 3
+requirements: [
+silicon/415
+phase-fabric/50
+titanium/90
+thorium/40
+]
+size: 4
+health: 650
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: matind-lightMatter
+}
+{
+type: DrawPlasma
+plasmas: 4
+suffix: -plasma-
+}
+{
+type: DrawDefault
+}
+]
+}

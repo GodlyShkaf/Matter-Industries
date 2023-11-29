@@ -1,0 +1,67 @@
+name: Matter conventor
+description: swaps tiers of matter
+size: 5
+health: 850
+type: multicraft.MultiCrafter
+category: crafting
+ambientSound: hum
+ambientSoundVolume: 5.5
+recipes: [
+{
+input: {
+power: 25
+fluids: [matind-lightMatter/5]
+}
+output: {
+fluids: [matind-heavyMatter/0.4]
+}
+craftTime: 195
+}
+{
+input: {
+fluids: [matind-heavyMatter/0.5]
+}
+output: {
+power: 15
+fluids: [matind-lightMatter/4]
+}
+craftTime: 195
+}
+]
+requirements: [
+plastanium/495
+silicon/550
+metaglass/150
+phase-fabric/350
+]
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawPlasma
+plasmas: 3
+}
+{
+type: DrawDefault
+}
+{
+type: DrawSpikes
+amount: 20
+x: 0
+y: 0
+stroke: 2
+rotateSpeed: 4
+sides: 6
+timeScl: 2
+color: ffd280
+radius: 16
+}
+{
+type: DrawWeave
+}
+]
+}

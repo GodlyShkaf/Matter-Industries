@@ -1,0 +1,122 @@
+name: Light stabiliser
+description: Forms basic resources by stabilizing light matter
+type: multicraft.MultiCrafter
+menu: transform
+recipes: [
+{
+input: {
+fluids: [matind-lightMatter/0.5]
+power: r
+}
+power: 4
+output: {
+items: [
+copper/2
+]
+}
+craftTime: 85
+}
+{
+input: {
+fluids: [matind-lightMatter/0.45]
+power: 3.5
+}
+output: {
+items: [
+lead/2
+]
+}
+craftTime: 85
+}
+{
+input: {
+fluids: [matind-lightMatter/0.7]
+power: 3.2
+}
+output: {
+items: [
+graphite/3
+]
+}
+craftTime: 95
+}
+{
+input: {
+fluids: [matind-lightMatter/0.8]
+power: 4.7
+}
+output: {
+items: [
+coal/3
+]
+}
+craftTime: 65
+}
+{
+input: {
+fluids: [matind-lightMatter/0.5]
+power: 5
+}
+output: {
+fluids: [water/0.5]
+}
+craftTime: 40
+}
+{
+input: {
+fluids: [matind-lightMatter/0.3]
+power: 2
+}
+output: {
+items: [
+sand/3
+]
+}
+craftTime: 55
+}
+]
+category: crafting
+updateEffect: pulverize
+ambientSound: hum
+ambientSoundVolume: 5
+requirements: [
+silicon/315
+phase-fabric/30
+titanium/130
+plastanium/30
+]
+size: 4
+health: 560
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: matind-lightMatter
+}
+{
+type: DrawPlasma
+plasmas: 4
+suffix: -plasma-
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 5
+spinSprite: true
+}
+{
+type: DrawDefault
+}
+{
+type: DrawFade
+suffix: -fade
+alpha: 0.9
+scale: 1.5
+}
+]
+}

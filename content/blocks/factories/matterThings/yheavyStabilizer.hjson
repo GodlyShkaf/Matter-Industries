@@ -1,0 +1,101 @@
+name: Heavy stabilizer
+description: Forms advanced resources by stabilizing heavy matter
+type: multicraft.MultiCrafter
+menu: transform
+recipes: [
+{
+input: {
+fluids: [matind-heavyMatter/0.1]
+power: 4
+}
+output: {
+items: [
+titanium/2
+]
+}
+craftTime: 30
+}
+{
+input: {
+fluids: [matind-heavyMatter/0.2]
+power: 3.5
+}
+output: {
+items: [
+plastanium/2
+]
+}
+craftTime: 15
+}
+{
+input: {
+fluids: [matind-heavyMatter/0.3]
+power: 3.2
+}
+output: {
+fluids: [cryofluid/2]
+}
+craftTime: 15
+}
+{
+input: {
+fluids: [matind-heavyMatter/0.3]
+power: 4.7
+}
+output: {
+items: [
+thorium/3
+]
+}
+craftTime: 20
+}
+{
+input: {
+fluids: [matind-heavyMatter/1.2]
+power: 8
+}
+output: {
+items: [
+surge-alloy/5
+]
+}
+craftTime: 65
+}
+]
+category: crafting
+updateEffect: redgeneratespark
+ambientSound: steam
+ambientSoundVolume: 5
+requirements: [
+surge-alloy/565
+silicon/315
+phase-fabric/75
+]
+size: 5
+health: 755
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: matind-lightMatter
+}
+{
+type: DrawPlasma
+plasmas: 3
+suffix: -plasma-
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: ffd280
+suffix: -glow
+}
+]
+}

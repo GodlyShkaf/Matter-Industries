@@ -1,0 +1,36 @@
+ammoTypes: {
+water: {
+type: LiquidBulletType
+knockback: 0.7
+drag: 0.01
+liquid: water
+}
+slag: {
+type: LiquidBulletType
+knockback: 0.7
+drag: 0.01
+damage: 4
+liquid: slag
+}
+cryofluid: {
+type: LiquidBulletType
+knockback: 0.7
+drag: 0.01
+liquid: cryofluid
+}
+oil: {
+type: LiquidBulletType
+knockback: 0.7
+drag: 0.01
+liquid: oil
+}
+lightMatter: {
+type: LiquidBulletType
+knockback: 2
+drag: 0.03
+damage: 5
+splashDamage: 10
+splashDamageRadius: 24
+liquid: lightMatter
+}
+}

@@ -1,0 +1,41 @@
+name: Cryofluid filter
+description: filters titanium out of cryofluid
+size: 2
+type: GenericCrafter
+outputItem: titanium/1
+outputLiquid: water/0.4
+consumes: {
+liquids: [
+cryofluid/0.5
+]
+power: 1.2
+}
+requirements: [
+titanium/50
+silicon/45
+metaglass/20
+]
+health: 215
+category: crafting
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawLiquidTile
+drawLiquid: cryofluid
+}
+{
+type: DrawBubbles
+sides: 6
+amount: 8
+radius: 6
+reccurence: 6
+stroke: 2
+spread:9
+color: 8ca4f5
+}
+{
+type: DrawDefault
+}
+]
+}

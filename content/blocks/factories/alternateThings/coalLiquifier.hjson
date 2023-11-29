@@ -1,0 +1,52 @@
+type: GenericCrafter
+name: Coal liquifier
+description: turns coal into oil
+health: 230
+size: 3
+hasLiquids: true
+hasItems: true
+liquidCapacity: 100
+outputLiquid: oil/0.4
+consumes: {
+power: 2.3
+liquids: [
+water/0.3
+]
+items: {
+items: [
+coal/4
+]
+}
+}
+craftTime: 85
+requirements: [
+lead/60
+titanium/85
+metaglass/20
+]
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawLiquidRegion
+drawLiquid: water
+suffix: -glow
+}
+]
+}
+category: crafting
+ambientSound: steam
+ambientSoundVolume: 0.2
+updateEffect: {
+type: ExplosionEffect
+flares: 0
+smokes: 15
+smokeRad: 15
+smokeLife: 180
+waveLife: 60
+waveRad: 20
+waveCol: ffffff
+}

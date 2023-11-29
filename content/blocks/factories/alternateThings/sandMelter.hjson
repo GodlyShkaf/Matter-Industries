@@ -1,0 +1,39 @@
+name: Scrap smelter
+description: Smelts sand into scrap
+type: AttributeCrafter
+size: 2
+health: 195
+outputItem: scrap/1
+consumes: {
+power: 2
+items: {
+items: [
+sand/2
+]
+}
+}
+attribute: heat
+baseEffectiveness: 1
+boostScale: 0.6
+maxBoost: 1.6
+requirements: [
+copper/80
+graphite/60
+]
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawArcSmelt
+suffix: -flame
+color: ffd280
+}
+]
+}
+category: crafting
+ambientSound: smelter
+ambientSoundVolume: 2
+updateEffect: smeltsmoke

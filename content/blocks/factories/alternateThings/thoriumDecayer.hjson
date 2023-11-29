@@ -1,0 +1,28 @@
+name: Thorium decayer
+type: Separator
+description: Decays thorium into sand, lead and copper
+size: 2
+health: 350
+results: [
+lead/3
+sand/1
+copper/2
+]
+consumes: {
+power: 0.4
+items: {
+items: [
+thorium/1
+]
+}
+}
+requirements: [
+thorium/30
+silicon/70
+copper/20
+]
+craftTime: 180
+category: crafting
+ambientSound: hum
+ambientSoundVolume: 0.4
+updateEffect: redgeneratespark

@@ -1,7 +1,7 @@
 name: matind
 displayName: Matter Industries
 author: Crazypumpkinserge
-description: WIP mod about alternative recipes for everything
+description: WIP mod about alternative recipes for everything, requires multi crafter lib (find this in mod browser) to run
 Version: 136
 minGameVersion: 136
 hidden: false

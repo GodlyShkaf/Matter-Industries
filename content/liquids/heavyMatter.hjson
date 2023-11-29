@@ -1,0 +1,9 @@
+type: Liquid
+name: Heavy matter
+description: Essence of matter, we can turn this into some heavy minerals
+color: 9e8080
+explosiveness: 3.3
+temperature: 3.5
+viscosity: 0.7
+heatCapacity: 0.15
+flammavility: 0.7

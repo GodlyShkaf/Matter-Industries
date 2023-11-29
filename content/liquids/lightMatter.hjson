@@ -1,0 +1,8 @@
+type: Liquid
+name: Light matter
+description: Essence of matter, we can turn this into some light minerals
+color: ffffff
+explosiveness: 2.3
+temperature: 2
+viscosity: 0.5
+heatCapacity: 0.1
